@@ -1,0 +1,56 @@
+<Styles xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:controls="using:MyCOOLproject.Views.Elements">
+  <Design.PreviewWith>
+    <controls:ElementMUX />
+  </Design.PreviewWith>
+
+  <Style Selector="controls|ElementMUX">
+    <!-- Set Defaults -->
+    <Setter Property="Template">
+      <ControlTemplate>
+		  <Canvas Height="63" Width="46" Background="Transparent">
+			  <Rectangle Name="1Line" Height="55" Width="1" Stroke="Black" StrokeThickness="1" Canvas.Left="8">
+				  <Rectangle.RenderTransform>
+					  <TranslateTransform X="1"
+                                          Y="1"/>
+				  </Rectangle.RenderTransform>
+			  </Rectangle>
+			  <Ellipse Name="MUXIn1" Fill="White" Height="10" Width="10" Stroke="Black" StrokeThickness="1" >
+				  <Ellipse.RenderTransform>
+					  <TranslateTransform X="0"
+                                          Y="12"/>
+				  </Ellipse.RenderTransform>
+			  </Ellipse>
+			  <Ellipse Name="MUXIn2" Fill="White" Height="10" Width="10" Stroke="Black" StrokeThickness="1" >
+				  <Ellipse.RenderTransform>
+					  <TranslateTransform X="0"
+                                          Y="40"/>
+				  </Ellipse.RenderTransform>
+			  </Ellipse>
+			  <Ellipse Name="MUXIn3" Fill="White" Height="10" Width="10" Stroke="Black" StrokeThickness="1" >
+				  <Ellipse.RenderTransform>
+					  <TranslateTransform X="18"
+                                          Y="50.5"/>
+				  </Ellipse.RenderTransform>
+			  </Ellipse>
+			  <Ellipse Name="MUXExit" Fill="White" Height="10" Width="10" Stroke="Black" StrokeThickness="1" >
+				  <Ellipse.RenderTransform>
+					  <TranslateTransform X="35"
+                                          Y="25"/>
+				  </Ellipse.RenderTransform>
+			  </Ellipse>
+			  <Rectangle Name="3Line" Height="35" Width="1" Stroke="Black" StrokeThickness="1" Canvas.Left="8">
+				  <Rectangle.RenderTransform>
+					  <TranslateTransform X="26"
+                                          Y="11"/>
+				  </Rectangle.RenderTransform>
+			  </Rectangle>
+			  <Path Name="2Line" Fill="White" Data="M 5,2 l 26,10 Z" Stroke="Black" StrokeThickness="1" Canvas.Left="4"></Path>
+			  <Path Name="4Line" Fill="White" Data="M 5.2,56.3 l 25.5,-11 Z" Stroke="Black" StrokeThickness="1" Canvas.Left="4"></Path>
+			  <Path Fill="Transparent" Data="M 5.2,56.3 l 25.5,-11 l 0,-34 l -25,-9 z" Canvas.Left="4"></Path>
+		  </Canvas>
+      </ControlTemplate>
+    </Setter>
+  </Style>
+</Styles>
